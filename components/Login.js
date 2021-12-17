@@ -15,7 +15,7 @@ function Login() {
           options={configLogin}
         />
         <div className="w-screen absolute h-screen z-50  flex flex-col items-center justify-center">
-          <h1 class="visually-hidden z-50 text-xl md:text-xl font-bold font-serif lg:text-2xl">
+          <h1 class="visually-hidden z-50 text-xl text-white md:text-xl font-bold font-serif lg:text-2xl">
             Loggin you into the Metaverse{" "}
           </h1>
           <img
