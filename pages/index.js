@@ -126,6 +126,7 @@ export default function Home() {
 
   if(!isAuthenticated) return < Login/>;
 
+
   return (
     <div className=" flex flex-col h-screen w-screen bg-black text-white text-center justify-center items-center">
       <Head>
