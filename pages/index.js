@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Login from '../components/Login'
 import  {useMoralis} from "react-moralis";
 import Particles from 'react-tsparticles';
-
+import Header from '../components/Header';
+import Messages from '../components/Messages'
 const configHome = {
   particles: {
     number: {
@@ -128,31 +129,22 @@ export default function Home() {
 
 
   return (
-    <div className=" flex flex-col h-screen w-screen bg-black text-white text-center justify-center items-center">
+    <div className="h-screen overflow-y-scroll flex flex-col w-screen bg-gradient-to-br from-[#0EA55C] to-[#0C7475] text-white ">
       <Head>
         <title>Metaverse</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Particles
+      {/* <Particles
         className="fixed w-full z-10 bg-opacity-0"
         id="tsparticles"
         options={configHome}
-      />
-      <h1 className="text-5xl mb-5  ">
-        Welcome to the ultimate <b className="text-red-600">METAVERSE</b>
-      </h1>
-
-      <button onClick={logout} class="relative inline-block text-lg group">
-        <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-          <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-          <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-          <span class="relative">Logout</span>
-        </span>
-        <span
-          class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
-          data-rounded="rounded-lg"
-        ></span>
-      </button>
+      /> */}
+      {/* Header */}
+      <div className="max-w-screen-2xl z-20">
+        <Header className="p-5" />
+      </div>
+      {/* Messages */}
+      <Messages />
     </div>
   );
 }
