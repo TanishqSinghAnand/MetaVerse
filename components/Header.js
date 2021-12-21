@@ -8,7 +8,7 @@ function Header() {
 
   return (
     // <div className="text-[#0D8B6A]">
-    <div className="sticky lg:p-5 top-0  z-50  shadow-sm text-[#000080] ">
+    <header className="sticky top-0 lg:p-5  sm:max-w-2xl lg:min-w-[90%] lg:mx-auto z-50  shadow-sm text-[#000080] ">
       <div className="grid border-b-2 border-[#000090] bg-[#0C7E6F] grid-cols-5 md:grid-cols-6 items-end md:items-center">
         <div className="relative h-20 w-20 mx-auto hidden md:inline-grid ">
           <Image
@@ -37,7 +37,7 @@ function Header() {
           <ChangeUserName className="p-2" />
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -129,7 +129,7 @@ export default function Home() {
 
 
   return (
-    <div className="h-screen overflow-y-scroll flex flex-col w-screen bg-gradient-to-br from-[#0EA55C] to-[#0C7475] text-white ">
+    <div className="h-screen overflow-y-scroll flex flex-col w-screen bg-gradient-to-br from-[#0EA55C] to-[#00707D] text-white ">
       <Head>
         <title>Metaverse</title>
         <link rel="icon" href="/favicon.ico" />
@@ -140,11 +140,11 @@ export default function Home() {
         options={configHome}
       /> */}
       {/* Header */}
-      <div className="max-w-screen-2xl z-20">
-        <Header className="p-5" />
+      <div className="lg:p-10">
+        <Header className="min-w-[80%] mx-auto" />
+        <Messages className="p-10 max-w-2xl z-20 m-6" />
       </div>
       {/* Messages */}
-      <Messages />
     </div>
   );
 }
