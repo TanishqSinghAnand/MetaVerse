@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
 
-function SendMessage({ endsOfMessageRef }) {
+function SendMessage({ endOfMessagesRef }) {
   const { user, Moralis } = useMoralis();
   const [message, setMessage] = useState("");
 

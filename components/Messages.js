@@ -5,7 +5,7 @@ import Message from "./Message";
 
 function Messages() {
   const { user } = useMoralis();
-  const endOfMessageRef = useRef(null);
+  const endOfMessagesRef = useRef(null);
   const MINS_DURATION = 300;
 
   const { data, loading, error } = useMoralisQuery(
@@ -24,7 +24,7 @@ function Messages() {
   );
   console.log(data);
   return (
-    <div className="pb-56 lg:m-24">
+    <div className="pb-24 lg:m-24">
       <div className="my-5">
         <ByMoralis
           style={{ marginLeft: "auto", marginRight: "auto" }}
@@ -38,9 +38,9 @@ function Messages() {
         ))}
       </div>
       <div className="flex justify-center">
-        <SendMessage endOfMessagesRef={endOfMessageRef} />
+        <SendMessage endOfMessagesRef={endOfMessagesRef} />
       </div>
-      <div ref={endOfMessageRef} className="text-center text-gray-400 mt-5">
+      <div ref={endOfMessagesRef} className="text-center text-gray-400 mt-5">
         <p>You're up to date {user.getUsername()} 🎉</p>
       </div>
     </div>
