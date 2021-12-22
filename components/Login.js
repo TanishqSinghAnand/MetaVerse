@@ -85,13 +85,13 @@ function Login() {
             onClick={authenticate}
             className="bg-[#1B1B1B] rounded-lg p-5 font-bold animate-pulse"
           >
-            Login to the Metaverse with blockchain
+            Login to the Metaverse with Crypto Wallet
           </button>
         </div>
 
         <div className="w-full h-screen -z-20">
           <Image
-            src="https://links.papareact.com/55n"
+            src="https://i.imgur.com/WYAjt3T.jpeg"
             objectFit="cover"
             layout="fill"
           />
