@@ -85,7 +85,7 @@ function Login() {
             onClick={authenticate}
             className="bg-[#1B1B1B] rounded-lg p-5 font-bold animate-pulse"
           >
-            Login to the Metaverse
+            Login to the Metaverse with blockchain
           </button>
         </div>
 
